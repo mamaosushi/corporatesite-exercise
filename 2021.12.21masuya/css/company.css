@@ -1,0 +1,239 @@
+body {
+    padding-top: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}    
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.header-name {
+    font-size: 25px;
+    margin: 20px 30px;
+    font-weight: bold;
+}
+
+.header-name:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.header-nav-list {
+    display: flex;
+    font-weight: bold;
+}
+
+.header-nav-list-name {
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+.header-nav-list-name:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.main-view {
+    position: relative;
+    height: 250px;
+}
+
+.main-view-img {
+    width: 100%;
+    height: 250px;
+    display: inline-block;
+}
+
+.main-view-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-view-text {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+}
+
+.company {
+    display: flex;
+    justify-content: center;
+}
+
+.company table {
+    margin: 80px 200px;
+    width: 100%;
+}
+
+.company table tr {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-size: 16px;
+}
+
+.company table th {
+    padding: 25px auto;
+}
+
+.company table td {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(248, 247, 247);
+    padding-bottom: 80px;
+}
+
+.contact h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.contact a {
+    background-color: rgb(207, 3, 30);
+    color: #fff;
+    padding: 7px 110px;
+    font-size: 15px;
+    line-height: 29px;
+}
+
+.contact a:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.footer {
+    padding: 22px 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer nav li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.footer nav li:hover {
+    filter: brightness(80%);
+    transition: 0.3s;
+}
+
+.footer nav li:not(:last-of-type) {
+    border-right: 1px solid #fff;
+}
+
+@media screen and (max-width: 480px){
+    .company {
+        display: flex;
+        justify-content: center;
+        padding: 5px 20px;
+    }
+    
+    .company table {
+        margin: 80px 0;
+        width: 100%;
+    }
+
+    .contact p {
+        font-size: 16px;
+        margin-bottom: 50px;
+        width: 85%;
+        line-height: 150%;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 22px 100px;
+        background-color: #000;
+        color: #fff;
+        font-size: 11px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer nav {
+        text-align: center;
+        margin-top: 9px;
+    }
+
+    .footer nav li {
+        display: block;
+        padding: 9px 10px;
+    }
+
+    .footer nav li:not(:last-of-type) {
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .company {
+        display: flex;
+        justify-content: center;
+        padding: 5px 30px;
+    }
+    
+    .company table {
+        margin: 80px 0;
+        width: 100%;
+    }
+
+    .footer {
+        padding: 22px 80px;
+        background-color: #000;
+        color: #fff;
+        font-size: 11px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer nav {
+        text-align: center;
+        margin-top: 9px;
+    }
+
+    .footer nav li {
+        padding: 9px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer nav li:not(:last-of-type) {
+        border-right: none;
+    }
+}

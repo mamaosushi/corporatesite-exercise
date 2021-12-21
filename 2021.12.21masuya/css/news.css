@@ -1,0 +1,257 @@
+body {
+    padding-top: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}    
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.header-name {
+    font-size: 25px;
+    margin: 20px 30px;
+    font-weight: bold;
+}
+
+.header-name:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.header-nav-list {
+    display: flex;
+    font-weight: bold;
+}
+
+.header-nav-list-name {
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+.header-nav-list-name:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.main-view {
+    position: relative;
+    height: 250px;
+}
+
+.main-view-img {
+    width: 100%;
+    height: 250px;
+    display: inline-block;
+}
+
+.main-view-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-view-text {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+}
+
+.news-item-box {
+    margin: 80px 180px;
+}
+
+.news-item {
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    display: block;
+    border: 1px solid #000;
+}
+
+.news-item:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(248, 247, 247);
+    padding-bottom: 80px;
+    margin-top: 80px;
+}
+
+.contact h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.contact a {
+    background-color: rgb(207, 3, 30);
+    color: #fff;
+    padding: 7px 110px;
+    font-size: 15px;
+    line-height: 29px;
+}
+
+.contact a:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.footer {
+    padding: 22px 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer nav li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.footer nav li:hover {
+    filter: brightness(80%);
+    transition: 0.3s;
+}
+
+.footer nav li:not(:last-of-type) {
+    border-right: 1px solid #fff;
+}
+
+@media screen and (max-width: 480px) {
+    .news-item-box {
+        margin: 80px 0;
+        padding: 0 18px;
+    }
+    
+    .news-item {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 10px;
+        margin: 10px 0;
+        font-weight: bold;
+        height: 28px;
+        line-height: 30px;
+        font-size: 13px;
+        background-color: #fff;
+        color: #000;
+        display: block;
+        border: 1px solid #000;
+        max-width: 100%;
+    }
+
+    .contact p {
+        font-size: 16px;
+        margin-bottom: 50px;
+        width: 85%;
+        line-height: 150%;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 22px 100px;
+        background-color: #000;
+        color: #fff;
+        font-size: 11px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer nav {
+        text-align: center;
+        margin-top: 9px;
+    }
+
+    .footer nav li {
+        display: block;
+        padding: 9px 10px;
+    }
+
+    .footer nav li:not(:last-of-type) {
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news-item-box {
+        margin: 80px 0;
+        padding: 0 30px;
+    }
+    
+    .news-item {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 10px;
+        margin: 10px 0;
+        font-weight: bold;
+        height: 28px;
+        line-height: 30px;
+        font-size: 13px;
+        background-color: #fff;
+        color: #000;
+        display: block;
+        border: 1px solid #000;
+        max-width: 100%;
+    }
+
+    .footer {
+        padding: 22px 80px;
+        background-color: #000;
+        color: #fff;
+        font-size: 11px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer nav {
+        text-align: center;
+        margin-top: 9px;
+    }
+
+    .footer nav li {
+        padding: 9px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer nav li:not(:last-of-type) {
+        border-right: none;
+    }
+}

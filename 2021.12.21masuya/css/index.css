@@ -1,0 +1,400 @@
+body {
+    padding-top: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}    
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.header-name {
+    font-size: 25px;
+    margin: 20px 30px;
+    font-weight: bold;
+}
+
+.header-name:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.header-nav-list {
+    display: flex;
+    font-weight: bold;
+}
+
+.header-nav-list-name {
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+.header-nav-list-name:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.main-view {
+    position: relative;
+    height: 600px;
+}
+
+.main-view-img {
+    width: 100%;
+    height: 600px;
+    display: inline-block;
+}
+
+.main-view-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-view-text {
+    color: #fff;
+    font-size: 48px;
+    letter-spacing: 5px;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-view-text span {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0ch;
+}
+
+.heart {
+    background-color: black;
+    color: #fff;
+    padding-left: 110px;
+    padding-right: 110px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+}
+
+.heart-content {
+    display: inline-block;
+    margin: auto;
+
+}
+
+.heart-ttl {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.heart-text {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.service h2 {
+    font-size: 30px;
+}
+
+.service-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 60px 100px 20px;
+}
+
+.service-box-item {
+    width: 49%;
+    margin-bottom: 30px;
+}
+
+.service-img {
+    width: 100%;
+}
+
+.service-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.service-text {
+    margin-top: 15px;
+}
+
+.service-text h3 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.service-text p{
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.service-btn {
+    background-color: rgb(207, 3, 30);
+    color: #fff;
+    padding: 7px 80px;
+    font-size: 15px;
+    line-height: 29px;
+}
+
+.service-btn:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.news {
+    background-color: #000;
+    height: 450px;
+}
+
+.news-box {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    padding-top: 80px;
+}
+
+.news-box h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.news-btn {
+    background-color: rgb(207, 3, 30);
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 20px;
+    line-height: 22px;
+}
+
+.news-btn:hover {
+    filter: brightness(80%);
+    transition: 0.3s;
+}
+
+.news-item-box {
+    margin: 10px 100px;
+}
+
+.news-item {
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    display: block;
+}
+
+.news-item:hover {
+    filter: brightness(80%);
+    transition: 0.3s;
+}
+
+.blog {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.blog h2 {
+    font-size: 30px;
+}
+
+.blog-box {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 85px 35px;
+}
+
+.blog-item {
+    width: 31%;
+}
+
+.blog-img {
+    width: 100%;
+}
+
+.blog-img:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.blog-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 15px 0;
+}
+
+.blog-date {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.blog-ttl {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.blog-ttl:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.blog-btn {
+    background-color: rgb(207, 3, 30);
+    color: #fff;
+    padding: 7px 80px;
+    font-size: 15px;
+    line-height: 29px;
+}
+
+.blog-btn:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.box {
+    display: flex;
+    margin: 80px 0;
+}
+
+.company {
+    width: 50%;
+    height: 250px;
+    background-color: rgb(207, 3, 30);
+    position: relative;
+    display: block;
+}
+
+.company:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.company p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.recruit {
+    width: 50%;
+    height: 250px;
+    background-color: #000;
+    position: relative;
+    display: block;
+}
+
+.recruit:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.recruit p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(248, 247, 247);
+    padding-bottom: 80px;
+}
+
+.contact h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.contact a {
+    background-color: rgb(207, 3, 30);
+    color: #fff;
+    padding: 7px 110px;
+    font-size: 15px;
+    line-height: 29px;
+}
+
+.contact a:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.footer {
+    padding: 22px 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer nav li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.footer nav li:hover {
+    filter: brightness(80%);
+    transition: 0.3s;
+}
+
+.footer nav li:not(:last-of-type) {
+    border-right: 1px solid #fff;
+}
+

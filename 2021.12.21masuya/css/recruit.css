@@ -1,0 +1,265 @@
+body {
+    padding-top: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}    
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.header-name {
+    font-size: 25px;
+    margin: 20px 30px;
+    font-weight: bold;
+}
+
+.header-name:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.header-nav-list {
+    display: flex;
+    font-weight: bold;
+}
+
+.header-nav-list-name {
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+.header-nav-list-name:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.main-view {
+    position: relative;
+    height: 250px;
+}
+
+.main-view-img {
+    width: 100%;
+    height: 250px;
+    display: inline-block;
+}
+
+.main-view-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-view-text {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+}
+
+.recruit {
+    display: flex;
+    flex-direction: column;
+}
+
+.recruit-box {
+    margin: 80px 200px 10px;
+}
+
+.recruit-box h2 {
+    font-size: 26px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 22px;
+    padding-bottom: 10px;
+}
+
+.recruit-box p {
+    font-size: 16px;
+}
+
+.recruit-box table {
+    margin: 22px 0;
+    font-size: 16px;
+    width: 100%;
+}
+
+.recruit-box table tr {
+    border: 1px solid #000;
+}
+
+.recruit-box table th {
+    padding: 15px auto;
+    background-color: rgb(248, 247, 247);
+}
+
+.recruit-box table td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    border-left: 1px solid #000;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(248, 247, 247);
+    padding-bottom: 80px;
+    margin-top: 40px;
+}
+
+.contact h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.contact a {
+    background-color: rgb(207, 3, 30);
+    color: #fff;
+    padding: 7px 110px;
+    font-size: 15px;
+    line-height: 29px;
+}
+
+.contact a:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.footer {
+    padding: 22px 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer nav li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.footer nav li:hover {
+    filter: brightness(80%);
+    transition: 0.3s;
+}
+
+.footer nav li:not(:last-of-type) {
+    border-right: 1px solid #fff;
+}
+
+@media screen and (max-width: 480px) {
+    .recruit {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .recruit-box {
+        margin: 90px 0 0 0;
+        padding: 0;
+    }
+    
+    .recruit-box p {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .contact {
+        margin-top: 60px;
+    }
+
+    .contact p {
+        font-size: 16px;
+        margin-bottom: 50px;
+        width: 85%;
+        line-height: 150%;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 22px 100px;
+        background-color: #000;
+        color: #fff;
+        font-size: 11px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer nav {
+        text-align: center;
+        margin-top: 9px;
+    }
+
+    .footer nav li {
+        display: block;
+        padding: 9px 10px;
+    }
+
+    .footer nav li:not(:last-of-type) {
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .recruit-box {
+        margin: 0;
+        padding: 80px 32px 0;
+    }
+
+    .contact {
+        margin-top: 60px;
+    }
+
+    .footer {
+        padding: 22px 80px;
+        background-color: #000;
+        color: #fff;
+        font-size: 11px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer nav {
+        text-align: center;
+        margin-top: 9px;
+    }
+
+    .footer nav li {
+        padding: 9px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer nav li:not(:last-of-type) {
+        border-right: none;
+    }
+}
