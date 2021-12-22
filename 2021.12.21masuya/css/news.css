@@ -46,6 +46,14 @@ a {
     transition: 0.3s;
 }
 
+.responsiv-nav {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
 .main-view {
     position: relative;
     height: 250px;
@@ -153,6 +161,148 @@ a {
     border-right: 1px solid #fff;
 }
 
+@media screen and (max-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        z-index: 1;
+    }
+    
+    .header-nav-list {
+        display: none;
+    }
+    
+    .header-nav-list-name {
+        display: none;
+    }
+
+    .responsiv-nav {
+        display: inline-block;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        transition: .7s;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    .responsiv-nav ul{
+        padding-top: 80px;
+    }
+
+    .responsiv-nav ul li{
+        list-style-type: none;
+        margin-top: 50px;
+        color: blue;
+    }
+
+    .menu {
+        display: inline-block;
+        width: 36px;
+        height: 32px;
+        cursor: pointer;
+        position: relative;
+        right: 28px;
+        top: 0;
+    }
+
+    .menu__line--top,
+    .menu__line--middle,
+    .menu__line--bottom {
+        display: inline-block;
+        width: 100%;
+        height: 4px;
+        background-color: #000;
+        position: absolute;
+        transition: 0.5s;
+    }
+      
+    .menu__line--top {
+        top: 0;
+    }
+
+    .menu__line--middle {
+        top: 14px;
+    }
+
+    .menu__line--bottom {
+        bottom: 0;
+    }
+
+    .menu.open span:nth-of-type(1) {
+        top: 14px;
+        transform: rotate(45deg);
+    }
+
+    .menu.open span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .menu.open span:nth-of-type(3) {
+        top: 14px;
+        transform: rotate(-45deg);
+    }
+
+    .in {
+        transform: translateX(100%);
+    }
+
+    .news-item-box {
+        margin: 80px 0;
+        padding: 0 38px;
+    }
+    
+    .news-item {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 10px;
+        margin: 10px 0;
+        font-weight: bold;
+        height: 28px;
+        line-height: 30px;
+        font-size: 13px;
+        background-color: #fff;
+        color: #000;
+        display: block;
+        border: 1px solid #000;
+        max-width: 100%;
+    }
+
+    .footer {
+        padding: 22px 80px;
+        background-color: #000;
+        color: #fff;
+        font-size: 11px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer nav {
+        text-align: center;
+        margin-top: 9px;
+    }
+
+    .footer nav li {
+        padding: 9px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer nav li:not(:last-of-type) {
+        border-right: none;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .news-item-box {
         margin: 80px 0;
@@ -201,54 +351,6 @@ a {
     .footer nav li {
         display: block;
         padding: 9px 10px;
-    }
-
-    .footer nav li:not(:last-of-type) {
-        border-right: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .news-item-box {
-        margin: 80px 0;
-        padding: 0 30px;
-    }
-    
-    .news-item {
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-left: 10px;
-        margin: 10px 0;
-        font-weight: bold;
-        height: 28px;
-        line-height: 30px;
-        font-size: 13px;
-        background-color: #fff;
-        color: #000;
-        display: block;
-        border: 1px solid #000;
-        max-width: 100%;
-    }
-
-    .footer {
-        padding: 22px 80px;
-        background-color: #000;
-        color: #fff;
-        font-size: 11px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .footer nav {
-        text-align: center;
-        margin-top: 9px;
-    }
-
-    .footer nav li {
-        padding: 9px 10px;
-        display: flex;
-        flex-direction: column;
     }
 
     .footer nav li:not(:last-of-type) {
